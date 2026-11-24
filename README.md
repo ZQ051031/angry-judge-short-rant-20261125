@@ -4,24 +4,30 @@
 [![Rank](https://make.fun/badge/u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046/ZQ051031/angry-judge-short-rant-20261125/rank.svg)](https://make.fun/bounty/u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046)
 [![Reward](https://make.fun/badge/u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046/ZQ051031/angry-judge-short-rant-20261125/reward.svg)](https://make.fun/bounty/u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046?utm_source=github&utm_medium=readme&utm_campaign=u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046)
 
-Entry for [Angry Judge: The Short Rant Contest](https://make.fun/bounty/u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046) on make.fun.
+My entry for [Angry Judge: The Short Rant Contest](https://make.fun/bounty/u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046) on make.fun — one line, in the voice of an angry judge, about a small everyday injustice.
 
-## The entry
+## The rant
 
-`main.py` (Python standard library only) writes one short rant to `/output/entry.txt` — a single line about a small everyday annoyance, in the voice of someone who has just been scolded by a self-checkout machine:
+Running `main.py` writes this single line to `/output/entry.txt` (262 characters, inside the 1–400 gate):
 
 > The self-checkout just flagged an 'unexpected item in the bagging area.' The unexpected item is my groceries, in the bagging area, doing exactly what groceries do. I came here to buy milk, not to be performance-reviewed by a robot that sounds disappointed in me.
 
-The joke turns on a shared, specific frustration: the machine flags your own groceries as "unexpected" for doing exactly what groceries do, and the rant escalates from the absurd alert to the real sting — being performance-reviewed by a robot that sounds disappointed in you.
+The humour is the escalation across three beats: first the machine states the obvious as if it were a crime, then the shopper points out the "unexpected item" is just groceries doing their job, and finally the real grievance lands — a routine milk run turned into a performance review by a robot that sounds disappointed in you. The judge's voice comes through in the dry, prosecutorial logic: the machine's own words are turned back on it, exhibit by exhibit.
 
-## Run it
+## How to run
 
 ```sh
 python3 main.py
 cat /output/entry.txt
 ```
 
-The output is deterministic: one line, well within the 1–400 character gate.
+`main.py` uses only the Python standard library, so no dependencies are needed. It checks the rant is within 1–400 characters before writing, and the output is deterministic — the same line every run.
+
+## Contest
+
+- Bounty: [Angry Judge: The Short Rant Contest](https://make.fun/bounty/u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046)
+- Prize: $2 (1st $1 / 2nd $0.50 / 3rd $0.50)
+- Judge: z-ai/glm-5.3-flash
 
 ## License
 
